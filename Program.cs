@@ -19,7 +19,7 @@ for (var i = 0; i < Poblacion.Length; i++)
     if (Poblacion[i] == minDep)
         minDepkey = Departamento[i];
 }
-
+//Ordenando con diccionario y Orderby de LINQ
 var ordenado = diccionario.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
 Departamento = ordenado.Keys.ToArray();
 Poblacion = ordenado.Values.ToArray();
