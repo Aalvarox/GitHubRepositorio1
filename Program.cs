@@ -29,3 +29,8 @@ Console.WriteLine();
 Console.WriteLine($"Población General:{Poblacion.Sum():N0}");
 Console.WriteLine($"Departamento con mayor Población:{maxDepkey}");
 Console.WriteLine($"Departamento con menor Población:{minDepkey}");
+
+// Sumar todas las poblaciones con SUM de LINQ
+System.Console.WriteLine($"Poblacion general:diccionario.Values.Sum():N0");
+System.Console.WriteLine($"Departamento con mayor poblacion:{maxDepKey}");
+System.Console.WriteLine($"Departamento con menor poblacion:{minDepKey}");
