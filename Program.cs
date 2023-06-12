@@ -16,23 +16,7 @@ Poblacion = ordenado.Values.ToArray();
 // Mostar los arreglos ordenados de menor a mayor
 for (var i = 0; i < Poblacion.Length; i++)
      Console.WriteLine($"{Departamento[i],20} ==> {Poblacion [i],10:N0} ");
-//Suma de toda la población y nombre de mayor a meno
+//Suma de toda la población y nombre de mayor a menor
 Console.WriteLine($"Población General:{Poblacion.Sum():N0}");
 Console.WriteLine($"Mayor Población:{maxDepkey}");
 Console.WriteLine($"Menor Población:{minDepkey}");
-//mostrar el diccionario sin ordenar
-System.Console.WriteLine($"Datos desordenados");
-foreach(var item in diccionario)
-System.Console.Writeline($"{item.Key,-20}==>{item.Value,10:NO}");
-Console.WriteLine();
-//Sumar todas las poblaciones con LINQ
-Console.WriteLine($"Población General:{Poblacion.Sum():N0}");
-Console.WriteLine($"Departamento con mayor Población:{maxDepkey}");
-Console.WriteLine($"Departamento con menor Población:{minDepkey}");
-
-// Sumar todas las poblaciones con SUM de LINQ
-System.Console.WriteLine($"Poblacion general:diccionario.Values.Sum():N0");
-System.Console.WriteLine($"Departamento con mayor poblacion:{maxDepKey}");
-System.Console.WriteLine($"Departamento con menor poblacion:{minDepKey}");
-
-System.Console.WriteLine($"Poblacion promedio: {diccionario.Values.Average():N2}");
